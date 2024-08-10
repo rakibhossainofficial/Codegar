@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&family=Wendy+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: none;
+    background: none;
+
+}
+::-webkit-scrollbar-thumb{
+    border:  5px solid rgb(255, 255, 255);
+    background-color: rgb(117, 117, 117);
+    border-radius: 10px;
+}
+
+::selection{
+    color: orangered;
+}
+
+
+
+/* ◢█ ============ HERO START    ===========█◣ */
+
+.hero{
+    background: linear-gradient(rgba(17, 17, 17, 0.11), rgba(0, 0, 0, 0.5)), url(./images/Main\ photo.png);
+    height: 115vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 2vw;
+    background-color: rgba(18, 19, 19, 0.336);
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+
+.logo img{
+    height: 3.5vw;
+
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.navbar li a{
+    margin: 0 2vw;
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: orangered;
+    transition: width 0.3s ease, right 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.hero-text{
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 22vw;
+    padding: 5vw;
+    text-align: center;
+}
+
+
+.hero-text h1 span{
+    color: orangered;
+}
+
+
+
+.hero-text h1{
+    font-size: 4vw;
+    text-shadow: 10px 10px 20px black;
+}
+
+#stroke {
+    color: transparent;
+    -webkit-text-stroke: 2px orangered;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 4.5vw;
+    text-shadow: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.hero-text h2{
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
+}
+
+
+.hero-text h3{
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+    font-weight: 500;
+    padding:0  15vw;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.452);
+}
+
+
+button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 1.5vw;
+}
+  
+button span {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0.5em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: orangered;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bolder;
+    border: 0.08em solid #fff;
+    -webkit-box-shadow: 0 0.4em 0.1em 0.019em #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+  
+button span:hover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: translate(0, 0.4em);
+    -ms-transform: translate(0, 0.4em);
+    transform: translate(0, 0.4em);
+    -webkit-box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
+}
+  
+button span:not(hover) {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+  
+
+/*◥█ ============  HERO END    ========== █◤*/
+
+
+
+/* ◢█ ============ ICON SECTION START    ===========█◣ */
+.icon-section{
+    height:60vh;
+    width: 100%;
+    padding: 3vw 0;
+    position: relative;
+}
+.progress-bar {
+    width: 60%; 
+    height: 3px; 
+    background-color: #8382827e;
+    overflow: hidden; 
+}
+
+.progress {
+    width: 50%; 
+    height: 100%; 
+    background-color: orangered; 
+}
+
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 70px;
+    margin: 0 20px;
+}
+
+
+
+.left-progress-bar {
+    width: 60%; 
+    height: 3px; 
+    background-color: #8382827e;
+    overflow: hidden; 
+    position: absolute;
+    right: 0;
+}
+
+.left-progress {
+    width: 50%; 
+    height: 100%; 
+    background-color: orangered; 
+    position: absolute;
+    right: 0;
+}
+
+
+.icon-section h2{
+    text-align: center;
+    margin-top: 4vw;
+    font-size: 3.5vw;
+}
+
+
+.icon-section h2 span{
+    color: orangered;
+}
+
+/* ◥█ ============  ICON SECTION END    ========== █◤ */
+
+
+ /* ◢█ ============ BANNER SECTION START    ===========█◣ */
+.banner-section{
+    height: 200vh;
+    width: 100%;
+}
+
+.banner-section h3{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+
+.banner-box{
+    height: 390px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    margin-top: 2vw;
+}
+
+.banner-text{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.banner-text h4{
+    font-size: 2vw;
+
+}
+
+.banner-text h4 span{
+    color: orangered;
+}
+
+.banner-text p{
+    font-size: 1.5vw;
+    padding-right: 2vw;
+}
+
+.banner-text button{
+    margin-top: 1vw;
+}
+
+.banner-img{
+    padding-left: 2vw;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner-img img{
+    height: 95%;
+    width: 90%;
+    border-radius: 2vw;
+    background-size:cover;
+    object-fit: cover;
+}
+
+/* ◥█ ============  BANNER SECTION END    ========== █◤  */
+
+
+
+/* ◢█ ============ SINGUP FORM START    ===========█◣ */
+.signup-form{
+    height: 100vh;
+    width: 100%;
+    padding: 2vw;
+}
+
+
+.signup-form h3{
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+form input, label, select{
+    height: 3vw;
+    width: 70%;
+    padding: 10px;
+    margin-top: 2vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    outline:2px solid grey;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    text-shadow: 0 1px #fff;
+}
+
+form input:hover{
+    box-shadow: 0 0 20px rgb(170, 45, 0);
+    outline: 2px solid orangered;
+}
+
+form p{
+    height: 5.5vw;
+    width: 70%;
+    margin-top: 2vw;
+}
+
+form select option{
+    height: 2vw;
+    font-size: 1.5vw;
+}
+
+#singUp-btn{
+    background-color: rgb(255, 126, 21);
+    color: #000000;
+    cursor: pointer;
+    height: 3vw;
+    width: 70%;
+    padding: 10px;
+    margin-top: 2vw;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+#singUp-btn:hover{
+    background-color: rgb(219, 69, 14);
+}
+
+/* ◥█ ============    SIGNUP FORM END    ========== █◤  */
+
+
+
+/* ◢█ ============ COMING SOON START    ===========█◣ */
+.comming-soon{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vw;
+}
+
+.comming-img{
+    background: url(./images/GRAPHIC.png);
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comming-text{
+    height: 35vw;
+    width: 35vw;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.comming-text h4{
+    font-size: 2.6vw;
+    text-align: center;
+}
+
+.comming-text p{
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+/* ◥█ ============  COMMING SOON END    ========== █◤  */
+
+
+footer{
+    height: 15vh;
+    width: 100%;
+    background-color: #5f5f5fb2;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer h3{
+    font-size: 2vw;
+}
+
+/* ◥█ ============  FOOTER  END    ========== █◤  */
